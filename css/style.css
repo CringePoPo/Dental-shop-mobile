@@ -52,7 +52,6 @@
 .login-main .login-wrapper .cta-links {
   margin: 0 auto;
   border-bottom: 3px solid;
-  width: 50%;
   height: 40px;
   margin-bottom: 10px;
   text-align: center;
@@ -69,7 +68,6 @@
   color: #000;
 }
 .login-main .login-wrapper .form-login {
-  width: 50%;
   margin: 0 auto;
   text-align: center;
 }
@@ -144,7 +142,10 @@
   position: relative;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
 }
 
 .signin .content .form .links a {
@@ -198,6 +199,11 @@ main .special .hero-content-span .options {
   flex-wrap: wrap;
   align-items: center;
 }
+@media (max-width: 320px) {
+  main .special .hero-content-span .options {
+    gap: 10px;
+  }
+}
 main .special .hero-content-span .options p {
   color: #9E9E9E;
 }
@@ -207,12 +213,34 @@ main .special .hero-content-span .options select {
   border: none;
   width: 114.5px;
 }
+@media (max-width: 375px) {
+  main .special .hero-content-span .options select {
+    width: 98.75px;
+  }
+}
+@media (max-width: 320px) {
+  main .special .hero-content-span .options select {
+    width: 88px;
+  }
+}
 main .special .hero-content-span .special-deal-wrapper {
   flex-wrap: wrap;
 }
 main .special .hero-content-span .special-deal-wrapper .special-deal-post {
   width: 194.375px;
   height: 245px;
+}
+@media (max-width: 375px) {
+  main .special .hero-content-span .special-deal-wrapper .special-deal-post {
+    width: 170.62px;
+    height: 220px;
+  }
+}
+@media (max-width: 320px) {
+  main .special .hero-content-span .special-deal-wrapper .special-deal-post {
+    width: 144.5px;
+    height: 200px;
+  }
 }
 main .special .hero-content-span .special-deal-wrapper .special-deal-post .special-content-img img {
   width: 194.375px;
@@ -832,6 +860,10 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
+.svg {
+  width: 40px;
+}
+
 .TabContainer {
   width: 100%;
   background-color: #f2f3f3;
@@ -1275,9 +1307,22 @@ form button {
   display: flex;
   gap: 10px;
   flex-shrink: 0; /* Prevent the services divs from shrinking */
-  width: 255px;
+  width: 50%;
   padding: 10px 20px;
   border-right: 2px solid #ccc;
+}
+@media (max-width: 320px) {
+  .services {
+    padding: 8px 11px;
+  }
+}
+.services p {
+  font-size: 14px;
+}
+@media (max-width: 375px) {
+  .services p {
+    font-size: 12px;
+  }
 }
 
 .snaps-inline {
@@ -1298,7 +1343,7 @@ form button {
 }
 
 .main-page .special-deal-post {
-  width: 250px !important;
+  width: 200px !important;
   flex-shrink: 0;
 }
 
@@ -1321,9 +1366,23 @@ img {
   background-color: #01A4EF;
   border-radius: 50%;
 }
+.shopping i {
+  color: white;
+}
+@media (max-width: 320px) {
+  .shopping {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .logo {
   width: 90px;
+}
+@media (max-width: 320px) {
+  .logo {
+    width: 75px;
+  }
 }
 
 .mt-15 {
@@ -1402,6 +1461,11 @@ hr.line {
   padding: 10px 15px;
   background-color: #F4F4F4;
 }
+@media (max-width: 320px) {
+  .deal-banner {
+    padding: 10px;
+  }
+}
 .deal-banner p {
   color: #585C5E;
 }
@@ -1452,6 +1516,11 @@ header .lower-header .working-hours {
 }
 header .lower-header .date-time {
   line-height: 20px;
+}
+@media (max-width: 320px) {
+  header .lower-header .date-time {
+    font-size: 12px;
+  }
 }
 header .lower-header .search-form {
   display: flex;
@@ -1511,7 +1580,8 @@ main .hero-content-right .upper-img .discount-badge, main .hero-content-right .l
 main .pros-of-service {
   margin: 15px 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 main .pros-of-service .delivery-service {
   display: flex;
@@ -1609,17 +1679,37 @@ main .discount-badge .discount-rate {
   border-radius: 50px;
   width: 50px;
 }
+@media (max-width: 320px) {
+  main .discount-badge .discount-rate {
+    width: 40px;
+  }
+}
 main .discount-badge .discount-rate p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 320px) {
+  main .discount-badge .discount-rate p {
+    font-size: 13px;
+  }
+}
 main .discount-badge .discount {
   padding: 5px 15px;
 }
+@media (max-width: 320px) {
+  main .discount-badge .discount {
+    padding: 4px 7px;
+  }
+}
 main .discount-badge .discount .new-price p {
   font-size: 14px;
+}
+@media (max-width: 320px) {
+  main .discount-badge .discount .new-price p {
+    font-size: 12px;
+  }
 }
 main .discount-badge .discount .old-price p {
   font-size: 10px;
