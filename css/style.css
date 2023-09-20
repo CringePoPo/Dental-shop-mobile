@@ -1587,6 +1587,12 @@ main .pros-of-service .services .icon {
   width: 50px;
   height: 40px;
 }
+@media (max-width: 375px) {
+  main .pros-of-service .services .icon {
+    width: 40px;
+    height: 27px;
+  }
+}
 main .pros-of-service .delivery-service {
   display: flex;
   gap: 10px;
