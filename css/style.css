@@ -1583,6 +1583,10 @@ main .pros-of-service {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+main .pros-of-service .services .icon {
+  width: 50px;
+  height: 40px;
+}
 main .pros-of-service .delivery-service {
   display: flex;
   gap: 10px;
